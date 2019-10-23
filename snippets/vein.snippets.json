@@ -1,0 +1,59 @@
+{
+	"variable": {
+		"prefix": "var",
+		"body": [
+			"{$${1:variable}}"
+		],
+		"description": "Output a variable"
+	},
+	"consant": {
+		"prefix": "const",
+		"body": [
+			"{#${1:constant}#}"
+		],
+		"description": "Output a constant defined in your PHP code"
+	},
+	"include template": {
+		"prefix": "include template",
+		"body": [
+			"{include=\"${1:templateName}\"}"
+		],
+		"description": "Include another template file"
+	},
+	"if": {
+		"prefix": "if",
+		"body": [
+			"{if=\"${1:condition}\"}",
+				"<!-- code -->",
+			"{/if}"
+		],
+		"description": "If statement"
+	},
+	"if else": {
+		"prefix": "if else",
+		"body": [
+			"{if=\"${1:condition}\"}",
+				"<!-- code -->",
+			"{else}",
+				"<!-- code -->",
+			"{/if}"
+		],
+		"description": "If else statement"
+	},
+	"loop": {
+		"prefix": "foreach",
+		"body": [
+			"{loop=\"${1:array}\"}",
+       			"{$${2:key}}, {$${3:value}}",
+    		"{/loop}"
+		],
+		"description": "Foreach loop"
+	},
+	"function": {
+		"prefix": "function",
+		"body": [
+			"{function=\"${1:function}\"}"
+		],
+		"description": "Call a function"
+	}
+}
