@@ -20,6 +20,10 @@
             "language": "vein",
             "scopeName": "source.vein",
             "path": "./syntaxes/vein.tmLanguage.json"
+        }],
+        "snippets": [{
+            "language": "vein",
+            "path": "./snippets/vein.snippets.json"
         }]
     }
 }
