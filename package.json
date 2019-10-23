@@ -24,6 +24,11 @@
         "snippets": [{
             "language": "vein",
             "path": "./snippets/vein.snippets.json"
+        }],
+        "iconThemes": [{
+            "id": "vein",
+            "label": "Vein",
+            "path": "./icons/vein-icon-theme.json"
         }]
     }
 }
