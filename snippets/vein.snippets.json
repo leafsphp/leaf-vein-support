@@ -55,5 +55,80 @@
 			"{function=\"${1:function}\"}"
 		],
 		"description": "Call a function"
+	},
+	"noparse": {
+		"prefix": "noparse",
+		"body": [
+			"{noparse}",
+			"\t${1:code}",
+			"{/noparse}"
+		],
+		"description": "Equivalent of <pre> in vein"
+	},
+	"autoescapeoff": {
+		"prefix": "autoescapeoff",
+		"body": [
+			"{autoescape=\"off\"}",
+			"\t${1:code}",
+			"{/autoescape}"
+		],
+		"description": "Use auto escape method"
+	},
+	"paragraph": {
+		"prefix": ["paragraph", "p"],
+		"body": [
+			"<p>",
+			"\t${1:code}",
+			"</p>"
+		],
+		"description": "Paragraph Tag"
+	},
+	"bold": {
+		"prefix": [
+			"bold",
+			"b"
+		],
+		"body": [
+			"<b>",
+			"\t${1:code}",
+			"</b>"
+		],
+		"description": "Bold Tag"
+	},
+	"div": {
+		"prefix": "div",
+		"body": [
+			"<div>",
+			"\t${1:code}",
+			"</div>"
+		],
+		"description": "Div Tag"
+	},
+	"span": {
+		"prefix": "span",
+		"body": [
+			"<span>",
+			"\t${1:code}",
+			"</span>"
+		],
+		"description": "Span Tag"
+	},
+	"small": {
+		"prefix": "small",
+		"body": [
+			"<small>",
+			"\t${1:code}",
+			"</small>"
+		],
+		"description": "Small Tag"
+	},
+	"pre": {
+		"prefix": "pre",
+		"body": [
+			"<pre>",
+			"\t${1:code}",
+			"</pre>"
+		],
+		"description": "Pre Tag"
 	}
 }
