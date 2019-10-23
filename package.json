@@ -1,0 +1,25 @@
+{
+    "name": "leaf-vein-templating",
+    "displayName": "Leaf vein templating",
+    "description": "Support for the Leaf Vein templating engine",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.39.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "vein",
+            "aliases": ["Leaf Vein", "vein"],
+            "extensions": [".vein",".veins",".vein.html",".tpl",".vhtml",".leaf",".leafs",".leafphp"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "vein",
+            "scopeName": "source.vein",
+            "path": "./syntaxes/vein.tmLanguage.json"
+        }]
+    }
+}
